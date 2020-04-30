@@ -51,6 +51,30 @@ app.post('/delete', (req,res)=>{
 	});
 
 
+app.get("/pullimage", (req,res)=> {
+	res.render('pull.ejs');	
+	})
+
+app.post('/pullimage', function(req,res){
+	console.log('running post route')
+	var spawn = require("child_process").spawn;
+	console.log(req.body.image)
+	var process = spawn('python3',["./pull.py", 
+                            req.body.image] ); 
+	process.stdout.on('data', function(data) { 
+	console.log('script should be complete by now')
+        res.send('Image pulled: '+ data.toString()+'\nGo back now'); 
+	console.log(data.toString())
+    } );
+	});
+
+
+
+
+
+
+
+
 app.get('/names', callName); 
   
 function callName(req, res) { 
