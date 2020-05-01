@@ -131,11 +131,56 @@ app.post('/run',function(req,res){
 })
 
 
+//stopping a container
+app.get('/stop',function(req,res){
+	res.render('stop.ejs')	
+});
+
+
+app.post('/stop',function(req,res){
+	
+	console.log('running post route')
+	var spawn = require("child_process").spawn;
+	var process = spawn('python3',["./stop.py", 
+                            req.body.cont] ); 
+	process.stdout.on('data', function(data) { 
+	console.log('script should be complete by now')
+        res.send('Container'+ data.toString()+'is stopped ......\nGo back now'); 
+    } );
+
+})
+
 
 app.get('*',function(req,res){
 	res.send('try another route')
 	
 	});
+
+
+//removing all containers
+
+
+
+
+app.post('/removeall',function(req,res){
+	
+	console.log('running post route')
+	var spawn = require("child_process").spawn;
+	var process = spawn('python3',["./remove.py", 
+                            req.body.cont] ); 
+	process.stdout.on('data', function(data) { 
+	console.log('script should be complete by now')
+        res.send('All the containers are removed.Go back to create new one'); 
+    } );
+
+})
+
+
+app.get('*',function(req,res){
+	res.send('try another route')
+	
+	});
+
 
 
 

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,19 +12,15 @@
     <title>Docker</title>
   </head>
   <body>
-	<div class="container">
+<div class="container">
     <h1>DOCKER</h1>
-    	<a type="button" class="btn btn-primary btn-lg btn-block" href="/pullimage">Pull an image</a>
-	<a type="button" class="btn btn-secondary btn-lg btn-block" href="/create">create a container</a>
-	<a type="button" class="btn btn-primary btn-lg btn-block" href="/run">run a container</a>
-	<a type="button" class="btn btn-primary btn-lg btn-block" href="/stop">stop a container</a>
-	<a type="button" class="btn btn-secondary btn-lg btn-block" href="/delete">delete a container</a>
-	
-	<form action="/removeall" style="padding-top:10px" method = "POST">
-	<input class="btn btn-secondary btn-lg btn-block" type ="submit" value="Delete all containers">
-	<form>
-	
-	</div>
+    	
+<form action="/stop" method = "POST">
+	<input type ="text" name ="cont" placeholder="container name or id ">
+	<input type ="submit">
+<form>
+
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
