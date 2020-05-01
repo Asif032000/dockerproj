@@ -8,8 +8,7 @@ image = sys.argv[1]
 print("\nPulling Image...........",sys.argv[1])
 os.system('systemctl start docker')
 
-os.system('docker pull {}'.format(sys.argv[1]))
+os.system('docker pull {}'.format(image))
 
-os.system('node app.js')
 
 
