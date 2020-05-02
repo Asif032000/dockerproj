@@ -7,7 +7,7 @@ The project is still in working , the actual project i wanted to create is to co
 * all the dependencies should be installed which are under package.json .
 * Docker should be installed in your system.* 
 #### (YOU can install docker by running the script main.py in your system)  ###
-
+### This program with work with only those distros which use rpm package manager.
 # How to run the app:
 * Download the repository in your local machine.
 * Install Docker ( using main.py )
