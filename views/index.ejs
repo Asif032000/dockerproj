@@ -9,15 +9,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Docker</title>
+	
+  <style>
+	body{background : #86c6d6;}
+  </style>
   </head>
   <body>
 	<div class="container">
     <h1>DOCKER</h1>
     	<a type="button" class="btn btn-primary btn-lg btn-block" href="/pullimage">Pull an image</a>
-	<a type="button" class="btn btn-secondary btn-lg btn-block" href="/create">create a container</a>
-	<a type="button" class="btn btn-primary btn-lg btn-block" href="/run">run a container</a>
-	<a type="button" class="btn btn-primary btn-lg btn-block" href="/stop">stop a container</a>
-	<a type="button" class="btn btn-secondary btn-lg btn-block" href="/delete">delete a container</a>
+	<a type="button" class="btn btn-secondary btn-lg btn-block" href="/create">Create a container</a>
+	<a type="button" class="btn btn-primary btn-lg btn-block" href="/run">Run a container</a>
+	<a type="button" class="btn btn-secondary btn-lg btn-block" href="/stop">Stop a container</a>
+	<a type="button" class="btn btn-primary btn-lg btn-block" href="/delete">Delete a container</a>
 	
 	<form action="/removeall" style="padding-top:10px" method = "POST">
 	<input class="btn btn-secondary btn-lg btn-block" type ="submit" value="Delete all containers">
