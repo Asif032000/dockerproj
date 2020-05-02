@@ -21,3 +21,4 @@ The project is still in working , the actual project i wanted to create is to co
  
  ## you can run whole webapp operations using main.py script only , it also contains much more features than the Web app.
  
+# note: you may face some issue with pull image button , while pulling bigger images like ubuntu, debian etc. smaller images are working fine like alpine. To pull images bigger in size use main.py
