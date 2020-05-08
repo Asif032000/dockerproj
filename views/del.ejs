@@ -12,12 +12,15 @@
     <title>Docker</title>
   </head>
   <body>
-<div class="container">
+<div class="container col-lg-6">
     <h1>DOCKER</h1>
     	
 <form action="/delete" method = "POST">
-	<input type ="text" name ="cont" placeholder="container name">
-	<input type ="submit">
+	<div class="form-group">
+	<label>Container name or Id:</label>
+	<input type ="text" class="form-control" name ="cont" placeholder="container name">
+	</div>	
+	<input type ="submit" class="btn btn-primary" value="Delete">
 <form>
 
 </div>

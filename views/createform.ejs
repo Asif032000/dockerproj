@@ -12,13 +12,19 @@
     <title>Docker</title>
   </head>
   <body>
-<div class="container">
+<div class="container col-lg-6">
     <h1>DOCKER</h1>
     	
 <form action="/create" method = "POST">
-	<input type ="text" name ="cont" placeholder="container name">
-	<input type ="text" name ="image" placeholder="image name">
-	<input type ="submit">
+	<div class = "form-group"> 
+		<label>Container name:</label>
+		<input type ="text" class= "form-control" name ="cont" placeholder="container name">
+	</div>
+	<div class="form-group">
+		<label>Image name</label>
+		<input type ="text" name ="image" class="form-control" placeholder="image name">
+	</div>
+	<input type ="submit" class="btn btn-primary" value="Create">
 <form>
 
 </div>
