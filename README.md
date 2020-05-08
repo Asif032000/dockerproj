@@ -1,6 +1,6 @@
 # dockerproj
 
-The project is still in working , the actual project i wanted to create is to convert the python script I've written in Docker folder (main.py) to the Web App and adding some more features to it. However some of the features i've added in web app . 
+The project is still under development , the actual project i wanted to create is to convert the python script I've written in Docker folder (main.py) to the Web App and adding some more features to it. However some of the features i've added in web app . 
 
 # Requirements: 
 * Node server should be running on your machine.
